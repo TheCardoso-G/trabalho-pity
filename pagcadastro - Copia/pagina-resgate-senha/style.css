@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+   --cor--um: #DEFBFF ;
+   --cor--dois: rgb(5, 70, 246 ) ;
+   --cor--tres: #ffffff;
+   --cor--quatro: #122c8e;
+   --cor--cinco:#0b42f5;
+}
+body
+{
+    font-family: "Montserrat", sans-serif;
+    
+background-image: linear-gradient( to right , var(--cor--um)50% , var(--cor--dois)50%) ;
+display: grid;
+grid-template-columns: repeat(2 , 50%);
+overflow: hidden;
+}
+.resgatar
+{
+    grid-column: 2;
+}
+.alinharh1
+{
+    display: flex;
+    color: var(--cor--um);
+    justify-content: center;
+    text-align: center ;
+    align-items: center;
+    height: 30vh;
+    font-size: 0.8vw;
+    line-height: 4vh;
+   
+}
+.formatacao-form
+{
+    gap: 1vh;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 5%;
+}
+  .formatacao-form input {
+    display: flex;
+   align-self: center;
+    width: 60%;
+    height: 25px;
+   padding-left:1% ;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #DEFBFF;
+    outline: none;
+    box-shadow: rgb(255, 255, 255) 0px 0.8px 0px 0px;
+}
+.formatacao-form input:focus{
+    transition: .5s ease-out ;
+    background: transparent;
+    background-color: #122d8e83  ;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.formatacao-form p{
+    margin-left: 20%;
+    font-size: 1.3rem;
+    color: #DEFBFF;
+}
+.formatacao-form  button {
+    height: 5vh;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background-color: #DEFBFF;
+    font-size: 1.1rem;
+    align-self: center;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+.btn:hover
+{
+    background-color: var(--cor--quatro);
+    color: var(--cor--um);
+    transition: 1s ease-in-out ;
+}
+.btn{
+    transition: 1s ease-in-out ;
+}
+.Formatacao-Final
+{
+    width: 100%;
+   height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.Formatacao-Final p {
+    font-size: 1.5rem;
+    color: var(--cor--um);
+}
+.Novamente
+{
+    font-weight: bold;
+}
+#Saida
+{
+    grid-column: 1;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 1%;
+    left :1%;
+   color: var(--cor--quatro);
+}
+.logo
+{
+    grid-column: 1;
+    width: 5%;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+.imagens
+{
+    width: 100%;
+    height: 100vh;
+    grid-column: 1 ;
+    width: 50%;
+   
+   
+}
+.imagens img
+{
+   left: 10%;
+   top: 20%;
+    position: absolute;
+}
